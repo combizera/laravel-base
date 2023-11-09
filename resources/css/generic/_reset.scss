@@ -11,9 +11,17 @@ html {
 
 body {
 	width: 100%;
-	// font-family: "Poppins", sans-serif;;
 	color: inherit;
 	scroll-behavior: smooth;
+	line-height: 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
 }
 
 img {
@@ -21,15 +29,9 @@ img {
 	object-fit: cover;
 }
 
-button{
-  cursor: pointer;
-}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-body {
-	line-height: 1;
 }

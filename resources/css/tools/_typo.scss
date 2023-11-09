@@ -1,5 +1,5 @@
 @mixin typeface-1($size, $device: desktop) {
-  font-family: "Poppins", sans-serif;;
+  font-family: $font-pri;
 
   // h1
   @if $size == h1 and $device == desktop {
@@ -48,11 +48,11 @@
 
   // H6
   @else if $size == h6 and $device == desktop {
-      font-size: 1.625rem !important;
-      line-height: 120%;
+      font-size: 1rem !important;
+      line-height: normal;
   } @else if $size == h6 and $device == mobile {
-      font-size: 1.25rem !important;
-      line-height: 120%;
+      font-size: 1rem !important;
+      line-height: normal;
   }
 
   // p

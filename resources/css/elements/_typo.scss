@@ -34,6 +34,8 @@ h5 {
 }
 
 h6 {
+  font-weight: 700;
+  text-transform: uppercase;
   @include typeface-1(h6, desktop);
   @include responsive(s) {
       @include typeface-1(h6, mobile);
