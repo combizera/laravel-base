@@ -1,5 +1,5 @@
 @mixin typeface-1($size, $device: desktop) {
-  font-family: $font-pri;
+  font-family: "Poppins", sans-serif;;
 
   // h1
   @if $size == h1 and $device == desktop {
