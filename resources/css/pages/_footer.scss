@@ -1,0 +1,19 @@
+.footer{
+  a{
+    font-size: 0.875rem;
+  }
+  p{
+    font-size: 0.875rem;
+  }
+  h6{
+    margin-bottom: 20px;
+  }
+  &__social{
+    grid-column: span 2;
+  }
+  &__copy{
+    p{
+      text-align: center;
+    }
+  }
+}
