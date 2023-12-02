@@ -1,0 +1,41 @@
+// MEUS RESETS
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	width: 100%;
+	color: inherit;
+	scroll-behavior: smooth;
+	line-height: 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+span, input, label{
+  font-family: $font-pri;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
