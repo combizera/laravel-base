@@ -1,8 +1,19 @@
 .btn {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
   line-height: 120% !important;
   font-weight: 700;
   text-decoration: none;
+  display: inline-block;
+  border-radius: $border;
+}
+
+.btn-pri{
+  background-color: $color-normal;
+  color: $white;
+  padding: .5rem 2rem;
+  &:hover{
+    background: linear-gradient(89deg, #064580 0%, #2A6FAE 100%);
+  }
 }
 
 .link{

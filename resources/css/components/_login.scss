@@ -1,0 +1,56 @@
+.form{
+  box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
+  background-color: $white;
+  padding: 40px;
+  align-items: flex-start;
+  h1{
+    margin: 20px 0;
+  }
+  h2{
+    font-size: 1rem !important;
+    font-weight: 400;
+    color: $grey-normal;
+    margin-bottom: 10px;
+  }
+  &__buttons{
+    background-color: $color-light;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .btn-sec{
+    padding: 0.5rem 1rem;
+    border: 1px solid $color-light;
+    font-weight: 400;
+    transition: .3s;
+    &:hover{
+      color: $color-normal;
+      border: 1px solid $color-normal;
+    }
+  }
+  &__item{
+    margin-top: 20px;
+    width: 100%;
+  }
+  [type="submit"]{
+    width: 100%;
+    font-size: 1.25rem !important;
+    margin: 20px 0;
+    padding: 1rem 2rem;
+  }
+  .checkbox{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    [type="checkbox"]{
+      min-width: unset;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 10px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

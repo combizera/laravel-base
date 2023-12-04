@@ -3,7 +3,7 @@
 
   // h1
   @if $size == h1 and $device == desktop {
-      font-size: 3rem !important;
+      font-size: 2rem !important;
       line-height: 120%;
   } @else if $size == h1 and $device == mobile {
       font-size: 2rem !important;
@@ -12,11 +12,11 @@
 
   // H2
   @if $size == h2 and $device == desktop {
-      font-size: 2.5rem !important;
-      line-height: 3.75rem;
+      font-size: 2rem !important;
+      line-height: 120%;
   } @else if $size == h2 and $device == mobile {
       font-size: 2rem;
-      line-height: 3rem;
+      line-height: 120%;
   }
 
   // H3
@@ -66,10 +66,10 @@
 
   // a
   @else if $size == a1 and $device == desktop {
-      font-size: 1.25rem;
+      font-size: 1rem;
       line-height: 100%;
   } @else if $size == a1 and $device == mobile {
-      font-size: 1.125rem;
+      font-size: 1rem;
       line-height: 100%;
   }
 }
