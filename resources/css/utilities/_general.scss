@@ -1,8 +1,11 @@
 .container {
 	max-width: $container-xl;
 	margin: 0 auto;
-	padding: 0px 20px;
 	border: 2px solid red;
+}
+
+.secao{
+  padding: 120px 40px;
 }
 
 .ul {
@@ -11,4 +14,8 @@
 
 .border {
 	border-radius: 8px;
+}
+
+.bg{
+  background-color: $background;
 }

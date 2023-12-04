@@ -3,8 +3,7 @@
     {{-- LOGO --}}
     <div class="header__logo">
       <a href="/">
-        Logo
-        {{-- <img src="" alt=""> --}}
+        <x-icons.logo></x-icons>
       </a>
     </div>
 
@@ -25,7 +24,7 @@
 
     {{-- BOTÃO --}}
     <div class="header__button">
-      <button>Idioma</button>
+      <button>Login</button>
     </div>
   </div>
 </header>

@@ -1,6 +1,7 @@
 <x-layout>
-    <main>
+    <main class="bg">
+      <section class="container secao">
         index
-        oi
+      </section>
     </main>
 </x-layout>

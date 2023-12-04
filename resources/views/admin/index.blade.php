@@ -1,5 +1,5 @@
 <x-layout title="Admin">
-  <main class="index">
+  <main class="index bg">
     <section class="container">
       vc está logado
     </section>

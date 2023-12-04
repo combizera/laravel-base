@@ -6,9 +6,6 @@
         <nav>
           <ul class="ul">
             <li>
-              <a href="#">- Projetos</a>
-            </li>
-            <li>
               <a href="#">- Sobre</a>
             </li>
             <li>
