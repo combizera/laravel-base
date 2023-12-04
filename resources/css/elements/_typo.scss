@@ -1,0 +1,60 @@
+h1 {
+  @include typeface-1(h1, desktop);
+  @include responsive(s) {
+    @include typeface-1(h1, mobile);
+  }
+}
+
+h2 {
+  @include typeface-1(h2, desktop);
+  @include responsive(s) {
+    @include typeface-1(h2, mobile);
+  }
+}
+
+h3 {
+  @include typeface-1(h3, desktop);
+  @include responsive(s) {
+      @include typeface-1(h3, mobile);
+  }
+}
+
+h4 {
+  @include typeface-1(h4, desktop);
+  @include responsive(s) {
+      @include typeface-1(h4, mobile);
+  }
+}
+
+h5 {
+  @include typeface-1(h5, desktop);
+  @include responsive(s) {
+      @include typeface-1(h5, mobile);
+  }
+}
+
+h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+      @include typeface-1(h6, mobile);
+  }
+}
+
+p {
+  @include typeface-1(p, desktop);
+  @include responsive(s) {
+      @include typeface-1(p, mobile);
+  }
+}
+
+a {
+  color: inherit;
+  font-weight: unset;
+  background: unset;
+  @include typeface-1(a1, desktop);
+  @include responsive(s) {
+      @include typeface-1(a1, mobile);
+  }
+}

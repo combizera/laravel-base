@@ -1,0 +1,12 @@
+.header{
+  background-color: tomato;
+  &.container{
+    padding: 10px 40px;
+  }
+  &__nav{
+    ul{
+      display: flex;
+      gap: 20px;
+    }
+  }
+}

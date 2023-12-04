@@ -1,8 +1,23 @@
-// TOOLS
-@import 'tools';
+// SETTINGS
+@import "settings/";
 
-// BASE
-@import 'base/typo';
-@import 'base/base';
-@import 'base/buttons';
-@import 'base/colors';
+// TOOLS
+@import "tools/";
+
+// GENERIC
+@import "generic/";
+
+// ELEMENTS
+@import "elements/";
+
+// PAGES
+@import "pages/";
+
+// LAYOUTS
+@import "layouts/";
+
+// COMPONENTS
+@import "components/";
+
+// UTILITIES
+@import "utilities/";
