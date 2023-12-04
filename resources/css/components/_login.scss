@@ -53,4 +53,8 @@
       cursor: pointer;
     }
   }
+  display: none !important;
+  &.active{
+    display: flex !important;
+  }
 }
