@@ -1,8 +1,22 @@
-const $formLogin = document.getElementById('form-login');
-const $formCadastro = document.getElementById('form-cadastro');
 
-const $btnLogin = document.querySelectorAll('.btn-login');
+const $formWrapper = document.querySelector('.login__form');
 
-console.log($formLogin);
-console.log($formCadastro);
-console.log($btnLogin);
+const $btnLogin = $formWrapper.querySelector('.btn-login');
+const $btnCadastro = $formWrapper.querySelector('.btn-cadastro');
+
+$btnLogin.addEventListener("click", handleToggleForm);
+$btnCadastro.addEventListener("click", handleToggleForm);
+
+function handleToggleForm(event){
+  const $button = event.currentTarget;
+  const hash = $button.href;
+
+  event.preventDefault();
+
+  if ($formWrapper.dataset.form === "login"){
+    $formWrapper.dataset.form = "registrar";
+  } else {
+    $formWrapper.dataset.form = "login";
+  }
+
+}

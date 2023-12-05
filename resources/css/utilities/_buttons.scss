@@ -16,6 +16,17 @@
   }
 }
 
+.btn-sec{
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-light;
+  font-weight: 400;
+  transition: .3s;
+  &:hover{
+    color: $color-normal;
+    border: 1px solid $color-normal;
+  }
+}
+
 .link{
   position: relative;
   &::before {

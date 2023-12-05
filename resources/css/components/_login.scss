@@ -1,8 +1,4 @@
 .form{
-  box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
-  background-color: $white;
-  padding: 40px;
-  align-items: flex-start;
   h1{
     margin: 20px 0;
   }
@@ -19,30 +15,40 @@
     align-items: center;
     gap: 20px;
   }
-  .btn-sec{
-    padding: 0.5rem 1rem;
-    border: 1px solid $color-light;
-    font-weight: 400;
-    transition: .3s;
-    &:hover{
-      color: $color-normal;
-      border: 1px solid $color-normal;
-    }
-  }
   &__item{
     margin-top: 20px;
     width: 100%;
   }
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+    a{
+      font-size: 0.875rem;
+      margin-top: 20px;
+      color: $grey-dark;
+      opacity: .6;
+      transition: .3s;
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
   [type="submit"]{
     width: 100%;
     font-size: 1.25rem !important;
-    margin: 20px 0;
+    margin-top: 20px;
     padding: 1rem 2rem;
   }
   .checkbox{
     display: flex;
     align-items: center;
     font-size: 1rem;
+    label{
+      margin-bottom: 0;
+    }
+    a{
+      margin-top: 0;
+    }
     [type="checkbox"]{
       min-width: unset;
       width: 1rem;
@@ -53,8 +59,42 @@
       cursor: pointer;
     }
   }
-  display: none !important;
-  &.active{
-    display: flex !important;
+}
+
+.login{
+  &__form{
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.05);
+    background-color: $white;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    align-items: flex-start;
+
+    >.flex-column{
+      display: none;
+    }
+    &[data-form="login"]{
+      #form-login{
+        display: flex;
+        width: 100%;
+      }
+      .btn-login{
+       @extend .btn-pri;
+      }
+      .btn-cadastro{
+        @extend .btn-sec;
+       }
+    }
+    &[data-form="registrar"]{
+      #form-cadastro{
+        display: flex;
+      }
+      .btn-login{
+        @extend .btn-sec;
+      }
+      .btn-cadastro{
+         @extend .btn-pri;
+        }
+    }
   }
 }

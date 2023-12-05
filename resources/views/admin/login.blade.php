@@ -1,17 +1,16 @@
-<x-layout title="Login">
+<x-layout title="Acesso">
   <main class="bg">
 
     <section class="login container grid-2 secao">
-      <div class="login__form">
-        <form id="form-login" action="{{ route('login') }}" method="POST" class="form border flex-column active">
+      <div class="login__form border flex-column" data-form="login">
+        <div class="form__buttons border">
+          <a href="#form-login" class="btn-login btn border">Login</a>
+          <a href="#form-cadastro" class="btn-cadastro btn border">Registrar</a>
+        </div>
+
+        <form id="form-login" action="{{ route('login') }}" method="POST" class="form  flex-column">
           {{-- Diretiva que cuida da segurança --}}
           @csrf
-
-          <div class="form__buttons border">
-            <a href="#" class="btn-login btn btn-pri border">Login</a>
-            <a href="#" class="btn-cadastro btn btn-sec border">Registrar</a>
-          </div>
-
           <h1 class="h1">Faça Login</h1>
           <h2 class="h2">Descrição do Projeto</h2>
           <div class="form__item">
@@ -24,15 +23,16 @@
             <input required type="password" name="password" id="password" placeholder="********">
           </div>
 
-          <div class="form__item checkbox">
+          <div class="form__item checkbox form__footer">
             <label class="checkbox">
                 <input type="checkbox" name="remember">Lembrar senha
             </label>
+            <a href="#">Esqueceu a senha?</a>
           </div>
 
           <button type="submit" class="btn btn-pri">Login</button>
 
-          <div class="grid-2">
+          <div class="form__footer">
             <a href="#">Ainda não tem uma conta?</a>
             <a href="#">css</a>
           </div>
@@ -48,14 +48,9 @@
           @endif
         </form>
 
-        <form id="form-cadastro" action="{{ route('login') }}" method="POST" class="form border flex-column">
+        <form id="form-cadastro" action="{{ route('login') }}" method="POST" class="form flex-column">
           {{-- Diretiva que cuida da segurança --}}
           @csrf
-
-          <div class="form__buttons border">
-            <a href="#" class="btn-login btn btn-sec border">Login</a>
-            <a href="#" class="btn-cadastro btn btn-pri border">Registrar</a>
-          </div>
 
           <h1 class="h1">Faça o cadastro</h1>
           <h2 class="h2">Seu login será aprovado por um administrador antes de acessar 😉</h2>
