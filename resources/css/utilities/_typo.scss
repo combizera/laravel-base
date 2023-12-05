@@ -2,3 +2,24 @@
   text-transform: uppercase;
 }
 
+.color-highlight {
+  color: $color-normal;
+}
+
+.txt-75{
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  @include responsive(s){
+    width: 100%;
+  }
+}
+
+.txt-50{
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  @include responsive(s){
+    width: 100%;
+  }
+}

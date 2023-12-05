@@ -1,6 +1,5 @@
 <x-layout title="Acesso">
   <main class="bg">
-
     <section class="login container grid-2 secao">
       <div class="login__form border flex-column" data-form="login">
         <div class="form__buttons border">
@@ -89,9 +88,9 @@
       </div>
 
       <div class="login__img">
-
+        <h3 class="h3 color-highlight txt-75">Simplifique as contratações no seu escritório</h3>
+        <img src="{{ Vite::image('ilustracao.svg') }}" alt="Imagem de Destaque">
       </div>
-
     </section>
   </main>
 </x-layout>
