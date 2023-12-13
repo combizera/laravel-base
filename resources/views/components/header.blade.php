@@ -24,7 +24,7 @@
 
     {{-- BOTÃO --}}
     <div class="header__button">
-      <a data-modal="abrir" class="open-modal" href="{{ route('login') }}">Login</a>
+      <a data-modal="open" class="open-modal" href="{{ route('login') }}">Login</a>
     </div>
   </div>
 </header>

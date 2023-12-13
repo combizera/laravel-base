@@ -37,7 +37,7 @@
 
     @vite('resources/js/app.js')
     @isset($scripts)
-      {{ $scripts }}
+    {{ $scripts }}
     @endisset
 
   </body>
