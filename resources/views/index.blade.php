@@ -4,14 +4,12 @@
         index
       </section>
 
-      <button class="open-modal">Abrir Modal</button>
-
       {{-- MODAL --}}
-      <div class="modal__wrapper center active">
+      <div data-modal="container" class="modal__wrapper center">
         <div class="modal">
           <div class="modal__header border-bottom space-between">
             <p>deletar.exe</p>
-            <button class="modal__close">
+            <button data-modal="close" class="modal__close">
               <img src="{{ Vite::image('icons/icon-close.svg') }}" alt="Fechar Modal" />
             </button>
           </div>
