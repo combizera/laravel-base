@@ -10,4 +10,9 @@ class SiteController extends Controller
   {
     return view('index');
   }
+
+  public function error()
+  {
+    return view('404');
+  }
 }

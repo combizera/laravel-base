@@ -7,7 +7,6 @@
           <a href="#form-cadastro" class="btn-cadastro btn border">Registrar</a>
         </div>
 
-
         <x-forms.login></x-forms.login>
 
         <x-forms.cadastro></x-forms.cadastro>

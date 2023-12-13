@@ -1,3 +1,8 @@
+.btns{
+  display: flex;
+  gap: 20px;
+}
+
 .btn {
   font-size: 1rem !important;
   line-height: 120% !important;
@@ -18,12 +23,14 @@
 
 .btn-sec{
   padding: 0.5rem 1rem;
-  border: 1px solid $color-light;
+  border: 2px solid $color-normal;
+  color: $color-normal;
   font-weight: 400;
   transition: .3s;
   &:hover{
-    color: $color-normal;
-    border: 1px solid $color-normal;
+    background-color: $color-normal;
+    border: 2px solid $color-normal;
+    color: $white;
   }
 }
 
@@ -47,9 +54,4 @@
     transform: scaleX(1);
     }
   }
-}
-
-.div-buttons{
-  display: flex;
-  gap: 20px;
 }

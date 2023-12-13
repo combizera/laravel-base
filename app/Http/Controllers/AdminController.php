@@ -16,6 +16,7 @@ class AdminController extends Controller
       return view('admin/login');
     }
   }
+
   public function auth(LoginFormRequest $request)
   {
     if (Auth::attempt($request->validated())) {
@@ -26,6 +27,7 @@ class AdminController extends Controller
       ]);
     }
   }
+
   public function index()
   {
     return view('admin/index');

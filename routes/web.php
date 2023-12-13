@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', [SiteController::class, 'index']);
+Route::get('/', [SiteController::class, 'index'])->name('index');
+Route::get('/404', [SiteController::class, 'error'])->name('error-404');
 
 Route::get('/login', [AdminController::class, 'login'])->name('login');
 Route::post('/login', [AdminController::class, 'auth'])->name('login');
