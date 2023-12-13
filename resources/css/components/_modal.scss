@@ -1,0 +1,39 @@
+.modal{
+  color: $grey-dark;
+  background-color: $white;
+  min-width: 500px;
+  border: 2px solid $grey-dark;
+  box-shadow: 4px 4px 0px 0px $grey-dark;
+  &__wrapper{
+    backdrop-filter: blur(5px);
+    position: fixed;
+    inset: 0;
+    &.center{
+      display: none;
+    }
+    &.active{
+      display: flex;
+    }
+  }
+  &__close{
+    border: none;
+    padding: 0;
+    img{
+      padding: 3px 0;
+      width: 20px;
+    }
+  }
+  &__header{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__message{
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+  &__content{
+    padding: 40px 20px;
+  }
+}

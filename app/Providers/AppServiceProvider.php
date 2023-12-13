@@ -21,5 +21,6 @@ class AppServiceProvider extends ServiceProvider
   public function boot(): void
   {
     Vite::macro('image', fn (string $asset) => $this->asset("resources/img/{$asset}"));
+    Vite::macro('script', fn (string $asset) => $this->asset("resourcecs/js/{$asset}"));
   }
 }
