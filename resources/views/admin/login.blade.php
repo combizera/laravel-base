@@ -1,4 +1,4 @@
-<x-layout title="Acesso">
+<x-layout title="Página de Acesso">
   <main class="bg">
     <section class="login container grid-2 secao">
       <div class="login__form border flex-column" data-form="login">

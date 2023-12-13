@@ -8,6 +8,7 @@
 
     {{-- TÍTULO --}}
     <title>{{ $title ?? config('app.name') }}</title>
+
     @vite('resources/css/app.scss')
 
     {{-- PALAVRAS CHAVE --}}

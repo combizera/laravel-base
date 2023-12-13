@@ -13,6 +13,6 @@ class SiteController extends Controller
 
   public function error()
   {
-    return view('404');
+    return view('errors.404');
   }
 }

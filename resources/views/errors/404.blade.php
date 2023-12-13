@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="404 | Página Não Encontrada">
   <div class="container secao center flex-column error404">
     <h1 class="h1">404</h1>
     <p>Página não encontrada</p>

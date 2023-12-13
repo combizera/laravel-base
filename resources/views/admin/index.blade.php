@@ -1,4 +1,4 @@
-<x-layout title="Admin">
+<x-layout title="Página - Admin">
   <main class="index bg">
     <section class="container">
       vc está logado
