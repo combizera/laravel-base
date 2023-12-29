@@ -2,6 +2,15 @@
 	max-width: $container-xl;
 	margin: 0 auto;
 	border: 2px solid red;
+  @include responsive(m){
+    border: 2px solid greenyellow;
+  }
+  @include responsive(sm){
+    border: 2px solid blue;
+  }
+  @include responsive(s){
+    border: 2px solid tomato;
+  }
 }
 
 .secao{
