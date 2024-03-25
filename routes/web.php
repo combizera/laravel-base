@@ -5,22 +5,20 @@ use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+Route::fallback(function () {
+  return view('errors.404');
+});
 
-Route::get('/', [SiteController::class, 'index'])->name('index');
-Route::get('/404', [SiteController::class, 'error'])->name('error-404');
+// SITE
+Route::controller(SiteController::class)->group(function () {
+  Route::get('/', 'index')->name('site.index');
+});
 
-Route::get('/login', [AdminController::class, 'login'])->name('login');
-Route::post('/login', [AdminController::class, 'auth'])->name('login');
+// ADMIN
+Route::controller(AdminController::class)->group(function () {
+  Route::get('/login', 'login')->name('admin.login');
+  Route::post('/login', 'auth')->name('admin.login');
+});
 
 
 Route::middleware('auth')->group(function () {
